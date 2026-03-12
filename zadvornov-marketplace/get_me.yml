@@ -1,0 +1,18 @@
+info:
+  name: get_me
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{base_url}}/api/auth/me"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyOTc5MTc5NzUsInVzZXJuYW1lIjoidGVzdHVzZXI1MiIsImlhdCI6MTc3MzI5ODQ1NCwiZXhwIjoxNzczMzg0ODU0fQ.gYNP2mJhFXPHprgrPzmq3TaZ3yhcRqyBW1ksG7rHG5A
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

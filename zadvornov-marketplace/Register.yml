@@ -1,0 +1,23 @@
+info:
+  name: Register
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://kitek.ktkv.dev/marketplace/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "username": "testuser52",
+        "password": "password123",
+        "email": "test@example.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

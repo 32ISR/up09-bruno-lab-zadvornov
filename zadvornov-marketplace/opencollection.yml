@@ -1,0 +1,31 @@
+opencollection: 1.0.0
+
+info:
+  name: zadvornov-marketplace
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyOTc5MTc5NzUsInVzZXJuYW1lIjoidGVzdHVzZXI1MiIsImlhdCI6MTc3MzI5ODQ1NCwiZXhwIjoxNzczMzg0ODU0fQ.gYNP2mJhFXPHprgrPzmq3TaZ3yhcRqyBW1ksG7rHG5A
+  variables:
+    - name: base_url
+      value: https://kitek.ktkv.dev/marketplace
+    - name: auth
+      value: "Bearer "
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

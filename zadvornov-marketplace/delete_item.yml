@@ -1,0 +1,15 @@
+info:
+  name: delete_item
+  type: http
+  seq: 14
+
+http:
+  method: DELETE
+  url: "{{base_url}}/api/items/1773298715716:id"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
